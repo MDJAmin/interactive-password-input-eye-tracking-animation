@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-    transition: all 0.5s;
-  }
-
 :root {
     --bgColor: white;
     --inputColor: black;
@@ -11,4 +6,45 @@
     --spacer: 1rem;
   }
   
+  * {
+    box-sizing: border-box;
+    transition: all 0.5s;
+  }
   
+  html, body {
+    height: 100%;
+    transition: all 0.5s;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    background: var(--bgColor);
+    overflow: hidden;
+  }
+  
+  body.show-password {
+    --bgColor: black;
+    --inputColor: rgb(255, 0, 0);
+    --outlineColor: var(--beamColor);
+  }
+  
+  label,
+  input,
+  button {
+    font-size: 1.5rem;
+    font-family: monospace;
+    color: var(--inputColor);
+  }
+  
+  label:focus,
+  input:focus,
+  button:focus {
+    outline: 3px solid var(--outlineColor);
+    outline-offset: 2px;
+  }
+  
+  form {
+    padding: var(--spacer);
+    transform: translate3d(0, 0, 0);
+  }
