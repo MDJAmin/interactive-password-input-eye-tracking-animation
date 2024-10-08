@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.5s;
+  }
+
+:root {
+    --bgColor: white;
+    --inputColor: black;
+    --outlineColor: dodgerblue;
+    --beamColor: rgb(255, 0, 0);
+    --spacer: 1rem;
+  }
+  
+  
