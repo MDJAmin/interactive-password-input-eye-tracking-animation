@@ -13,3 +13,10 @@ root.addEventListener('mousemove', (e) => {
   
     root.style.setProperty('--beamDegrees', `${degrees}deg`);
   });
+
+  eye.addEventListener('click', e => {
+    e.preventDefault();
+    document.body.classList.toggle('show-password');
+    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password'
+    passwordInput.focus();
+  });
