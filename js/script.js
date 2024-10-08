@@ -1,3 +1,5 @@
+// Enjoy!! 🍓
+
 "use strict";
 const root = document.documentElement;
 const eye = document.querySelector("#eyeball");
