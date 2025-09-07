@@ -175,3 +175,26 @@ input:focus {
 body.show-password #beam {
   background: var(--beamColor);
 }
+
+.MDJAminDiv {
+  z-index: 4444;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+}
+
+.MDJAmin {
+  text-decoration: none;
+  border-top: 1px dashed var(--inputColor) !important;
+  border-bottom: 1px dashed var(--inputColor) !important;
+  padding: 0px 4px;
+  color: var(--inputColor);
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1.4em;
+  transition: all 0.5s;
+}
+
+.MDJAmin:hover {
+  color: var(--inputColor);
+}
